@@ -1,8 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
-    <title><![CDATA[你好,Hexo]]></title>
-    <url>%2F2019%2F06%2F03%2F%E4%BD%A0%E5%A5%BD-Hexo%2F</url>
-    <content type="text"><![CDATA[使用Hexo,是非常简单的一件事]]></content>
+    <title><![CDATA[MarkDown语法]]></title>
+    <url>%2F2019%2F06%2F02%2FMarkDown%E8%AF%AD%E6%B3%95%2F</url>
+    <content type="text"><![CDATA[​ Markdown的语法 ​ 语法文档 字体颜色，大小设置12345678&lt;font face="黑体"&gt;我是黑体字&lt;/font&gt;&lt;font face="微软雅黑"&gt;我是微软雅黑&lt;/font&gt;&lt;font face="STCAIYUN"&gt;我是华文彩云&lt;/font&gt;&lt;font color=#0099ff size=7 face="黑体"&gt;color=#0099ff size=72 face="黑体"&lt;/font&gt;&lt;font color=#00ffff size=72&gt;color=#00ffff&lt;/font&gt;&lt;font color=gray size=72&gt;color=gray&lt;/font&gt;Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏览器默认值是 3 我是黑体字我是微软雅黑我是华文彩云color=#0099ff size=72 face=”黑体”color=#00ffffcolor=gray Size：规定文本的尺寸大小。可能的值：从 1 到 7 的数字。浏览器默认值是 3 颜色表 设置图片展示比例1&lt;img src="快捷键/wallhaven-374651123.png" width="50%" height="50%"&gt; Next主题的内置标签文本居中的引用 此标签将生成一个带上下分割线的引用，同时引用内文本将自动居中。 文本居中时，多行文本若长度不等，视觉上会显得不对称，因此建议在引用单行文本的场景下使用。 例如作为文章开篇引用 或者 结束语之前的总结引用。 12345&lt;blockquote class="blockquote-center"&gt;blah blah blah&lt;/blockquote&gt;&lt;!-- 标签 方式，要求版本在0.4.5或以上 --&gt;&#123;% centerquote %&#125;blah blah blah&#123;% endcenterquote %&#125;&lt;!-- 标签别名 --&gt;&#123;% cq %&#125; blah blah blah &#123;% endcq %&#125; 效果弱者只有千难万难，而勇者则能披荆斩棘;愚者只有声声哀叹，智者却有千路万路。 一帆风顺的人，往往经受不住挫折。 凡事要主动出击你才能成为主角，否则你只能是配角! Bootstrap Callout使用方式1&#123;% note class_name %&#125; Content (md partial supported) &#123;% endnote %&#125; 其中，class_name 可以是以下列表中的一个值： default primary success info warning danger 效果从上到下 一切利己的生活，都是非理性的，动物的生活。——列夫·托尔斯泰 受苦的人，没有悲观的权利。——尼采 越学习，越发现自己的无知。——笛卡尔 社会是一个泥坑，我们得站在高地上。——巴尔扎克 生命不等于是呼吸，生命是活动。——卢梭 人生不是一种享乐，而是一桩十分沉重的工作。——列夫·托尔斯泰 标题标准语法一般在#后跟个空格再写文字 123456# 这是一级标题## 这是二级标题### 这是三级标题#### 这是四级标题##### 这是五级标题###### 这是六级标题 效果如下： 这是一级标题这是二级标题这是三级标题这是四级标题这是五级标题这是六级标题字体加粗：文字两边分别用*号包起来 加粗字体 斜体：用一个* 斜体 斜体加粗：三个* 斜体加粗 删除线：用两个～～ 删除线 引用在引用的文字前加&gt;即可，引用也可以嵌套，如加两个&gt;&gt; 这是引用的内容 这是二级引用 分割线三个或者三个以上的-或者*都可以 —或者*** 图片12345![图片alt](图片地址 &apos;&apos;图片title&apos;&apos;)图片alt就是显示在图片下面的文字，相等于图片内容的解释图片title是图片的标题，当鼠标移动到图片上时显示的内容，title可加可不加其实最好的方式就是在source/images中放置图片，直接拖过来就可以了。 ![avatar](MarkDown语法/v2-89be8079835866b850f08a2d4583592f_hd.jpg ‘’小昭’’) 超链接1[我的博客](https://guofeiyu.github.io/) 我的博客 列表无序列表可以用-+*任意一种都可以 内容1 内容2 有序列表数字加点 内容列表 内容2 注意:序号和内容之间要有空格 列表嵌套上一级与下一级之间敲三个空格即可 123 张三 李四 代码1`代码内容` 12345(```) 代码... 代码... 代码...(```) 123public static void main(String argos)&#123; System.out.println("hello world");&#125; 流程图123456789​```flowst=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op&amp; 123456789```flowst=&gt;start: 开始op=&gt;operation: My Operationcond=&gt;condition: Yes or No?e=&gt;endst-&gt;op-&gt;condcond(yes)-&gt;econd(no)-&gt;op 行内标记行内标记用反引号把它包起来 纸上得来终觉浅，绝知此事要躬行]]></content>
+      <categories>
+        <category>Java</category>
+      </categories>
+      <tags>
+        <tag>MarkDown语法练习</tag>
+      </tags>
   </entry>
 </search>
