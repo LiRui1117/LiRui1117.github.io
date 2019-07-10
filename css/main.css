@@ -1766,7 +1766,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #85ffff;
+  background: #ffe31a;
 }
 .feed-link,
 .chat {
@@ -2959,15 +2959,11 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("/images/backGround.jpg");
+  background: url("/images/123.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-}
-.main-inner {
-  background: #fff;
-  opacity: 0.9;
 }
 #heart {
   animation: heartAnimate 1.33s ease-in-out infinite;
