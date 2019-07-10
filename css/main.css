@@ -1766,7 +1766,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #ffe84e;
+  background: #c7c1a7;
 }
 .feed-link,
 .chat {
@@ -2977,10 +2977,6 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-}
-.main-inner {
-  background: #fff;
-  opacity: 0.9;
 }
 @-moz-keyframes heartAnimate {
   0%, 100% {
