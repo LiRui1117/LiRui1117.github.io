@@ -38,6 +38,10 @@
 
 
 
+  
+  
+  <link rel="stylesheet" href="/lib/fancybox/source/jquery.fancybox.css">
+
 
 
 
@@ -75,7 +79,7 @@
     sidebar: {"position":"left","display":"post","offset":12,"onmobile":false,"dimmer":false},
     back2top: true,
     back2top_sidebar: false,
-    fancybox: false,
+    fancybox: true,
     fastclick: false,
     lazyload: false,
     tabs: true,
@@ -108,7 +112,7 @@
 <meta property="og:image" content="http://yoursite.com/2019/07/11/Docker/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190711141928.png">
 <meta property="og:image" content="http://yoursite.com/2019/07/11/Docker/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190711142028.png">
 <meta property="og:image" content="http://yoursite.com/2019/07/11/Docker/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20190711142630.png">
-<meta property="og:updated_time" content="2019-07-11T06:52:30.898Z">
+<meta property="og:updated_time" content="2019-07-12T03:53:38.653Z">
 <meta name="twitter:card" content="summary">
 <meta name="twitter:title" content="Docker">
 <meta name="twitter:description" content="​     Docker ​    官网">
@@ -387,12 +391,24 @@
                 
               
 
-              <time title="创建时间：2019-07-11 11:44:46 / 修改时间：14:52:30" itemprop="dateCreated datePublished" datetime="2019-07-11T11:44:46+08:00">2019-07-11</time>
+              <time title="创建时间：2019-07-11 11:44:46" itemprop="dateCreated datePublished" datetime="2019-07-11T11:44:46+08:00">2019-07-11</time>
             
 
             
               
 
+              
+                
+                <span class="post-meta-divider">|</span>
+                
+
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                
+                  <span class="post-meta-item-text">更新于</span>
+                
+                <time title="修改时间：2019-07-12 11:53:38" itemprop="dateModified" datetime="2019-07-12T11:53:38+08:00">2019-07-12</time>
               
             
           </span>
@@ -481,6 +497,8 @@
 <p>3、删除镜像/容器等</p>
 <p>　　<strong>rm -rf /var/lib/docker</strong></p>
 </blockquote>
+<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br></pre></td><td class="code"><pre><span class="line">启动        systemctl start docker</span><br><span class="line"></span><br><span class="line">守护进程重启   sudo systemctl daemon-reload</span><br><span class="line"></span><br><span class="line">重启docker服务   systemctl restart  docker</span><br><span class="line"></span><br><span class="line">重启docker服务  sudo service docker restart</span><br><span class="line"></span><br><span class="line">关闭docker   service docker stop   </span><br><span class="line"></span><br><span class="line">关闭docker  systemctl stop docker</span><br></pre></td></tr></table></figure>
+
 <hr>
 <h2 id="Docker-安装-MySQL"><a href="#Docker-安装-MySQL" class="headerlink" title="Docker 安装 MySQL"></a>Docker 安装 MySQL</h2><h4 id="1-查找Docker-Hub上的mysql镜像"><a href="#1-查找Docker-Hub上的mysql镜像" class="headerlink" title="1.查找Docker Hub上的mysql镜像"></a>1.查找Docker Hub上的mysql镜像</h4><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">docker search mysql</span><br></pre></td></tr></table></figure>
 
@@ -757,7 +775,7 @@ setInterval("createtime()",250);
 <div class="theme-info">
  <i class="fa fa-pencil"></i>
   <div class="powered-by"></div>
-  <span class="post-count">总字数7.7k字</span>
+  <span class="post-count">总字数7.8k字</span>
 </div>
 
 
@@ -826,6 +844,8 @@ setInterval("createtime()",250);
 
 
 
+  
+
 
 
 
@@ -851,6 +871,9 @@ setInterval("createtime()",250);
 
   
   <script src="/lib/velocity/velocity.ui.min.js?v=1.2.1"></script>
+
+  
+  <script src="/lib/fancybox/source/jquery.fancybox.pack.js"></script>
 
   
   <script src="/lib/three/three.min.js"></script>
