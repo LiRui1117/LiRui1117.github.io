@@ -1766,7 +1766,7 @@ pre .javascript .function {
   width: 4px;
   height: 4px;
   border-radius: 50%;
-  background: #adffe3;
+  background: #fffe75;
 }
 .feed-link,
 .chat {
@@ -2959,7 +2959,7 @@ ul.breadcrumb li+li:last-child {
   }
 }
 body {
-  background: url("/images/123.jpg");
+  background: url("/images/wallhaven-md2l9y.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-attachment: fixed;
