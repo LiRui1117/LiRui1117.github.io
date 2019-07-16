@@ -100,22 +100,17 @@
 
 
 
-  <meta name="description" content="​          代理模式 ​    官网">
+  <meta name="description" content="​     强大的API文档工具 官网">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Nginx">
-<meta property="og:url" content="http://yoursite.com/2019/07/12/Nginx/index.html">
+<meta property="og:title" content="Swagger">
+<meta property="og:url" content="http://yoursite.com/2019/07/16/Swagger/index.html">
 <meta property="og:site_name" content="Lynne&#39;s blog">
-<meta property="og:description" content="​          代理模式 ​    官网">
+<meta property="og:description" content="​     强大的API文档工具 官网">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:image" content="http://yoursite.com/2019/07/12/Nginx/1202586-20181211123717325-1261206014.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/12/Nginx/1202586-20180406175939873-925019958.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/12/Nginx/1202586-20180406180130452-1246060303.png">
-<meta property="og:image" content="http://yoursite.com/2019/07/12/Nginx/1202586-20181211122806997-940664368.png">
-<meta property="og:updated_time" content="2019-07-12T06:02:40.329Z">
+<meta property="og:updated_time" content="2019-07-16T07:09:27.099Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Nginx">
-<meta name="twitter:description" content="​          代理模式 ​    官网">
-<meta name="twitter:image" content="http://yoursite.com/2019/07/12/Nginx/1202586-20181211123717325-1261206014.png">
+<meta name="twitter:title" content="Swagger">
+<meta name="twitter:description" content="​     强大的API文档工具 官网">
 
 
 
@@ -123,7 +118,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/12/Nginx/">
+  <link rel="canonical" href="http://yoursite.com/2019/07/16/Swagger/">
 
 
 
@@ -133,7 +128,7 @@
   };
 </script>
 
-  <title>Nginx | Lynne's blog</title>
+  <title>Swagger | Lynne's blog</title>
   
 
 
@@ -347,7 +342,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/12/Nginx/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/16/Swagger/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lr">
@@ -364,7 +359,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Nginx
+          <h1 class="post-title" itemprop="name headline">Swagger
 
               
             
@@ -390,7 +385,7 @@
                 
               
 
-              <time title="创建时间：2019-07-12 11:03:07 / 修改时间：14:02:40" itemprop="dateCreated datePublished" datetime="2019-07-12T11:03:07+08:00">2019-07-12</time>
+              <time title="创建时间：2019-07-16 14:52:53 / 修改时间：15:09:27" itemprop="dateCreated datePublished" datetime="2019-07-16T14:52:53+08:00">2019-07-16</time>
             
 
             
@@ -429,39 +424,23 @@
       
 
       
-        <blockquote class="blockquote-center"><p>​          <strong>代理模式</strong></p>
-<p>​    <a href="https://www.nginx.com/" target="_blank" rel="noopener">官网</a></p>
+        <blockquote class="blockquote-center"><p>​     <strong>强大的API文档工具</strong></p>
+<p><a href="https://swagger.io/" target="_blank" rel="noopener">官网</a></p>
 </blockquote>
 
 <a id="more"></a>
 
-<h1 id="代理模式"><a href="#代理模式" class="headerlink" title="代理模式"></a>代理模式</h1><h2 id="正向代理"><a href="#正向代理" class="headerlink" title="正向代理"></a>正向代理</h2><p>如今的网络环境下，我们如果由于技术需要要去访问国外的某些网站，此时你会发现位于国外的某网站我们通过浏览器是没有办法访问的，此时大家可能都会用一个操作FQ进行访问，FQ的方式主要是找到一个可以访问国外网站的代理服务器，我们将请求发送给代理服务器，代理服务器去访问国外的网站，然后将访问到的数据传递给我们！</p>
-<p>上述这样的代理模式称为正向代理，<strong>正向代理最大的特点是客户端非常明确要访问的服务器地址</strong>；服务器只清楚请求来自哪个代理服务器，而不清楚来自哪个具体的客户端；正向代理模式<strong>屏蔽或者隐藏了真实客户端信息</strong>。</p>
-<p><img src="/2019/07/12/Nginx/1202586-20181211123717325-1261206014.png" alt="正向代理"></p>
-<p><strong><em>正向代理：”它代理的是客户端，代客户端发出请求”</em></strong></p>
-<p>正向代理的用途：<br>（1）访问原来无法访问的资源，如Google<br>（2） 可以做缓存，加速访问资源<br>（3）对客户端访问授权，上网进行认证<br>（4）代理可以记录用户访问记录（上网行为管理），对外隐藏用户信息</p>
-<h2 id="反向代理"><a href="#反向代理" class="headerlink" title="反向代理"></a>反向代理</h2><p>当每天同时连接到网站的访问人数过多，单个服务器远远不能满足。<strong>分布式部署</strong>，也就是通过部署多台服务器来解决访问人数限制的问题；某宝网站中大部分功能也是直接使用Nginx进行反向代理实现的。</p>
-<p><img src="/2019/07/12/Nginx/1202586-20180406175939873-925019958.png" alt="反向代理"></p>
-<p>通过上述的图解大家就可以看清楚了，多个客户端给服务器发送的请求，Nginx服务器接收到之后，按照一定的规则分发给了后端的业务处理服务器进行处理了。此时~请求的来源也就是客户端是明确的，但是请求具体由哪台服务器处理的并不明确了，<strong>Nginx扮演的就是一个反向代理角色。</strong></p>
-<p><strong><em>客户端是无感知代理的存在的，反向代理对外都是透明的，访问者并不知道自己访问的是一个代理。因为客户端不需要任何配置就可以访问。</em></strong></p>
-<p>反向代理，”<strong><em>它代理的是服务端，代服务端接收请求</em></strong>“，主要用于服务器集群分布式部署的情况下，反向代理隐藏了服务器的信息。</p>
-<p>反向代理的作用：<br>（1）保证内网的安全，通常将反向代理作为公网访问地址，Web服务器是内网<br>（2）负载均衡，通过反向代理服务器来优化网站的负载</p>
-<h3 id="项目场景"><a href="#项目场景" class="headerlink" title="项目场景"></a>项目场景</h3><p>通常情况下，我们在实际项目操作时，正向代理和反向代理很有可能会存在在一个应用场景中，正向代理代理客户端的请求去访问目标服务器，目标服务器是一个反向单利服务器，反向代理了多台真实的业务处理服务器。具体的拓扑图如下：</p>
-<p><img src="/2019/07/12/Nginx/1202586-20180406180130452-1246060303.png" alt></p>
-<h2 id="二者区别"><a href="#二者区别" class="headerlink" title="二者区别"></a>二者区别</h2><p><img src="/2019/07/12/Nginx/1202586-20181211122806997-940664368.png" alt="区别"></p>
-<p>在正向代理中，Proxy和Client同属于一个LAN（图中方框内），隐藏了客户端信息；</p>
-<p>在反向代理中，Proxy和Server同属于一个LAN（图中方框内），隐藏了服务端信息；</p>
-<hr>
-<h1 id="负载均衡"><a href="#负载均衡" class="headerlink" title="负载均衡"></a>负载均衡</h1><p>客户端发送的请求，Nginx反向代理服务器接收到的请求数量，就是我们说的<strong>负载量</strong>。</p>
-<p>请求数量按照一定的规则进行分发到不同的服务器处理的规则，就是一种<strong>均衡规则</strong>。</p>
-<p>所以将服务器接收到的请求按照规则分发的过程，称为<strong>负载均衡</strong>。</p>
-<p>Nginx支持的负载均衡调度算法方式如下：</p>
-<ol>
-<li><strong>weight轮询(默认，常用)</strong>：接收到的请求按照权重分配到不同的后端服务器，即使在使用过程中，某一台后端服务器宕机，Nginx会自动将该服务器剔除出队列，请求受理情况不会受到任何影响。 这种方式下，可以给不同的后端服务器设置一个权重值(weight)，用于调整不同的服务器上请求的分配率；权重数据越大，被分配到请求的几率越大；该权重值，主要是针对实际工作环境中不同的后端服务器硬件配置进行调整的。</li>
-<li><strong>ip_hash（常用）</strong>：每个请求按照发起客户端的ip的hash结果进行匹配，这样的算法下一个固定ip地址的客户端总会访问到同一个后端服务器，这也在一定程度上解决了集群部署环境下session共享的问题。</li>
-<li>fair：智能调整调度算法，动态的根据后端服务器的请求处理到响应的时间进行均衡分配，响应时间短处理效率高的服务器分配到请求的概率高，响应时间长处理效率低的服务器分配到的请求少；结合了前两者的优点的一种调度算法。但是需要注意的是Nginx默认不支持fair算法，如果要使用这种调度算法，请安装upstream_fair模块。</li>
-<li>url_hash：按照访问的url的hash结果分配请求，每个请求的url会指向后端固定的某个服务器，可以在Nginx作为静态服务器的情况下提高缓存效率。同样要注意Nginx默认不支持这种调度算法，要使用的话需要安装Nginx的hash软件包。</li>
-</ol>
+<h4 id="前言："><a href="#前言：" class="headerlink" title="前言："></a>前言：</h4><p> Swagger 是一款RESTFUL接口的文档在线自动生成+功能测试功能软件。</p>
+<p> Swagger 是一个规范和完整的框架，用于生成、描述、调用和可视化 RESTful 风格的 Web 服务。总体目标是使客户端和文件系统作为服务器以同样的速度来更新。文件的方法，参数和模型紧密集成到服务器端的代码，允许API来始终保持同步。Swagger 让部署管理和使用功能强大的API从未如此简单。</p>
+<p><strong>可以生成文档形式的api并提供给不同的团队</strong></p>
+<p><strong>便于自测</strong></p>
+<p><strong>无需过多冗余的word文档</strong></p>
+<h2 id="1-引入依赖"><a href="#1-引入依赖" class="headerlink" title="1.引入依赖"></a>1.引入依赖</h2><figure class="highlight"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br></pre></td><td class="code"><pre><span class="line">&lt;dependency&gt;</span><br><span class="line">          &lt;groupId&gt;io.springfox&lt;/groupId&gt;</span><br><span class="line">          &lt;artifactId&gt;springfox-swagger-ui&lt;/artifactId&gt;</span><br><span class="line">          &lt;version&gt;2.8.0&lt;/version&gt;</span><br><span class="line">      &lt;/dependency&gt;</span><br><span class="line">      &lt;dependency&gt;</span><br><span class="line">          &lt;groupId&gt;io.springfox&lt;/groupId&gt;</span><br><span class="line">          &lt;artifactId&gt;springfox-swagger2&lt;/artifactId&gt;</span><br><span class="line">          &lt;version&gt;2.8.0&lt;/version&gt;</span><br><span class="line">      &lt;/dependency&gt;</span><br></pre></td></tr></table></figure>
+
+<h2 id="2-Swagger配置类"><a href="#2-Swagger配置类" class="headerlink" title="2.Swagger配置类"></a>2.Swagger配置类</h2><figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br></pre></td><td class="code"><pre><span class="line"><span class="keyword">import</span> org.springframework.context.annotation.Configuration;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.DefaultServletHandlerConfigurer;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.ResourceHandlerRegistry;</span><br><span class="line"><span class="keyword">import</span> org.springframework.web.servlet.config.annotation.WebMvcConfigurationSupport;</span><br><span class="line"><span class="keyword">import</span> springfox.documentation.swagger2.annotations.EnableSwagger2;</span><br><span class="line"></span><br><span class="line"><span class="meta">@Configuration</span></span><br><span class="line"><span class="meta">@EnableSwagger</span>2</span><br><span class="line"><span class="keyword">public</span> <span class="class"><span class="keyword">class</span> <span class="title">Swagger2Config</span> <span class="keyword">extends</span> <span class="title">WebMvcConfigurationSupport</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 因为 Swagger2的资源文件都是在jar包里面，如果不在此处配置加载静态资源，</span></span><br><span class="line"><span class="comment">     * 会导致请求http://localhost:8081/swagger-ui.html失败</span></span><br><span class="line"><span class="comment">     *  &lt;!--swagger资源配置--&gt;</span></span><br><span class="line"><span class="comment">     *  &lt;mvc:resources location="classpath:/META-INF/resources/" mapping="swagger-ui.html"/&gt;</span></span><br><span class="line"><span class="comment">     *  &lt;mvc:resources location="classpath:/META-INF/resources/webjars/" mapping="/webjars/**"/&gt;</span></span><br><span class="line"><span class="comment">     *</span></span><br><span class="line"><span class="comment">     * <span class="doctag">@param</span> registry</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">protected</span> <span class="keyword">void</span> <span class="title">addResourceHandlers</span><span class="params">(ResourceHandlerRegistry registry)</span> </span>&#123;</span><br><span class="line">        registry.addResourceHandler(<span class="string">"/**"</span>).addResourceLocations(</span><br><span class="line">                <span class="string">"classpath:/static/"</span>);</span><br><span class="line">        registry.addResourceHandler(<span class="string">"/swagger-ui.html"</span>)</span><br><span class="line">                .addResourceLocations(<span class="string">"classpath:/META-INF/resources/"</span>);</span><br><span class="line"></span><br><span class="line">        registry.addResourceHandler(<span class="string">"/webjars/**"</span>)</span><br><span class="line">                .addResourceLocations(<span class="string">"classpath:/META-INF/resources/webjars/"</span>);</span><br><span class="line">        <span class="keyword">super</span>.addResourceHandlers(registry);</span><br><span class="line">    &#125;</span><br><span class="line"></span><br><span class="line">    <span class="comment">/**</span></span><br><span class="line"><span class="comment">     * 配置servlet处理</span></span><br><span class="line"><span class="comment">     */</span></span><br><span class="line">    <span class="meta">@Override</span></span><br><span class="line">    <span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">configureDefaultServletHandling</span><span class="params">(</span></span></span><br><span class="line"><span class="function"><span class="params">            DefaultServletHandlerConfigurer configurer)</span> </span>&#123;</span><br><span class="line">        configurer.enable();</span><br><span class="line">    &#125;</span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+
+<h2 id="3-访问"><a href="#3-访问" class="headerlink" title="3.访问"></a>3.访问</h2><p>localhost:8080/swagger-ui.html</p>
+<h2 id="4-swagger注释API详细说明"><a href="#4-swagger注释API详细说明" class="headerlink" title="4.swagger注释API详细说明"></a>4.swagger注释API详细说明</h2><p><a href="https://blog.csdn.net/xupeng874395012/article/details/68946676" target="_blank" rel="noopener">https://blog.csdn.net/xupeng874395012/article/details/68946676</a></p>
 
       
     </div>
@@ -492,8 +471,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/11/Docker/" rel="next" title="Docker">
-                <i class="fa fa-chevron-left"></i> Docker
+              <a href="/2019/07/16/连接池Druid/" rel="next" title="连接池Druid">
+                <i class="fa fa-chevron-left"></i> 连接池Druid
               </a>
             
           </div>
@@ -501,10 +480,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/12/Stream流-Lambda表达式/" rel="prev" title="Stream流&Lambda表达式">
-                Stream流&Lambda表达式 <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -650,7 +625,7 @@
             
 
             
-              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#代理模式"><span class="nav-number">1.</span> <span class="nav-text">代理模式</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#正向代理"><span class="nav-number">1.1.</span> <span class="nav-text">正向代理</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#反向代理"><span class="nav-number">1.2.</span> <span class="nav-text">反向代理</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#项目场景"><span class="nav-number">1.2.1.</span> <span class="nav-text">项目场景</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#二者区别"><span class="nav-number">1.3.</span> <span class="nav-text">二者区别</span></a></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#负载均衡"><span class="nav-number">2.</span> <span class="nav-text">负载均衡</span></a></li></ol></div>
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-4"><a class="nav-link" href="#前言："><span class="nav-number">1.</span> <span class="nav-text">前言：</span></a></li></ol><li class="nav-item nav-level-2"><a class="nav-link" href="#1-引入依赖"><span class="nav-number"></span> <span class="nav-text">1.引入依赖</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#2-Swagger配置类"><span class="nav-number"></span> <span class="nav-text">2.Swagger配置类</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#3-访问"><span class="nav-number"></span> <span class="nav-text">3.访问</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#4-swagger注释API详细说明"><span class="nav-number"></span> <span class="nav-text">4.swagger注释API详细说明</span></a></li></div>
             
 
           </div>
@@ -865,7 +840,7 @@ setInterval("createtime()",250);
   
     <script>
   window.livereOptions = {
-    refer: '2019/07/12/Nginx/'
+    refer: '2019/07/16/Swagger/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];
