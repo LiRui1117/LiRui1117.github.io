@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[路径问题]]></title>
+    <url>%2F2019%2F08%2F19%2F%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98%2F</url>
+    <content type="text"><![CDATA[​ 路径问题 获取当前项目的target目录1String path = new ApplicationHome(this.getClass()).getSource().getParentFile().getPath()；]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[异常统一处理]]></title>
     <url>%2F2019%2F07%2F22%2F%E5%BC%82%E5%B8%B8%E7%BB%9F%E4%B8%80%E5%A4%84%E7%90%86%2F</url>
     <content type="text"><![CDATA[​ 异常捕获 显然，默认的异常页是对用户或者调用者而言都是不友好的，所以一般上我们都会进行实现自己业务的异常提示信息。 创建全局的统一异常处理类 利用@ControllerAdvice和@ExceptionHandler定义一个统一异常处理类 @ControllerAdvice：控制器增强，使@ExceptionHandler、@InitBinder、@ModelAttribute注解的方法应用到所有的 @RequestMapping注解的方法。 @ExceptionHandler：异常处理器，此注解的作用是当出现其定义的异常时进行处理的方法 123456789101112131415161718192021222324252627282930import org.springframework.web.bind.annotation.ControllerAdvice;import org.springframework.web.bind.annotation.ExceptionHandler;import org.springframework.web.bind.annotation.ResponseBody;import java.util.HashMap;import java.util.Map;@ControllerAdvicepublic class GlobalExceptionHandler &#123; @ExceptionHandler(&#123;ArithmeticException.class&#125;) @ResponseBody public Map&lt;String, Object&gt; handleArithmeticException(ArithmeticException e) &#123; Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;(); e.printStackTrace(); map.put("errorCode", "500"); map.put("errorMsg", e.getMessage()); return map; &#125; @ExceptionHandler(Exception.class) @ResponseBody public Map&lt;String, Object&gt; handlerException(Exception e) &#123; Map&lt;String, Object&gt; map = new HashMap&lt;String, Object&gt;(); e.printStackTrace(); map.put("errorCode", "500"); map.put("errorMsg", e.getMessage()); return map; &#125;&#125;]]></content>
