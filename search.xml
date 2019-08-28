@@ -3,7 +3,7 @@
   <entry>
     <title><![CDATA[路径问题]]></title>
     <url>%2F2019%2F08%2F19%2F%E8%B7%AF%E5%BE%84%E9%97%AE%E9%A2%98%2F</url>
-    <content type="text"><![CDATA[​ 路径问题 获取当前项目的target目录1String path = new ApplicationHome(this.getClass()).getSource().getParentFile().getPath()；]]></content>
+    <content type="text"><![CDATA[​ 路径问题 获取当前项目的target目录1String path = new ApplicationHome(this.getClass()).getSource().getParentFile().getPath()； 当上传的名称或者对应会重复的地方重复时，加盐。 https://blog.csdn.net/qq_21508727/article/details/80718693]]></content>
   </entry>
   <entry>
     <title><![CDATA[异常统一处理]]></title>
