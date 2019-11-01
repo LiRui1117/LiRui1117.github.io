@@ -100,17 +100,17 @@
 
 
 
-  <meta name="description" content="​     代码生成">
+  <meta name="description" content="​     面试题目">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Mybatis代码生成器">
-<meta property="og:url" content="http://yoursite.com/2019/07/11/Mybatis代码生成器/index.html">
+<meta property="og:title" content="面试">
+<meta property="og:url" content="http://yoursite.com/2019/11/01/面试/index.html">
 <meta property="og:site_name" content="Lynne&#39;s blog">
-<meta property="og:description" content="​     代码生成">
+<meta property="og:description" content="​     面试题目">
 <meta property="og:locale" content="zh-CN">
-<meta property="og:updated_time" content="2019-07-11T03:18:08.000Z">
+<meta property="og:updated_time" content="2019-11-01T11:10:11.217Z">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="Mybatis代码生成器">
-<meta name="twitter:description" content="​     代码生成">
+<meta name="twitter:title" content="面试">
+<meta name="twitter:description" content="​     面试题目">
 
 
 
@@ -118,7 +118,7 @@
 
   
   
-  <link rel="canonical" href="http://yoursite.com/2019/07/11/Mybatis代码生成器/">
+  <link rel="canonical" href="http://yoursite.com/2019/11/01/面试/">
 
 
 
@@ -128,7 +128,7 @@
   };
 </script>
 
-  <title>Mybatis代码生成器 | Lynne's blog</title>
+  <title>面试 | Lynne's blog</title>
   
 
 
@@ -342,7 +342,7 @@
   
   
   <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/07/11/Mybatis代码生成器/">
+    <link itemprop="mainEntityOfPage" href="http://yoursite.com/2019/11/01/面试/">
 
     <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
       <meta itemprop="name" content="Lr">
@@ -359,7 +359,7 @@
 
         
         
-          <h1 class="post-title" itemprop="name headline">Mybatis代码生成器
+          <h1 class="post-title" itemprop="name headline">面试
 
               
             
@@ -385,7 +385,7 @@
                 
               
 
-              <time title="创建时间：2019-07-11 11:16:52 / 修改时间：11:18:08" itemprop="dateCreated datePublished" datetime="2019-07-11T11:16:52+08:00">2019-07-11</time>
+              <time title="创建时间：2019-11-01 19:08:08 / 修改时间：19:10:11" itemprop="dateCreated datePublished" datetime="2019-11-01T19:08:08+08:00">2019-11-01</time>
             
 
             
@@ -424,13 +424,14 @@
       
 
       
-        <blockquote class="blockquote-center"><p>​     <strong>代码生成</strong></p>
+        <blockquote class="blockquote-center"><p>​     <strong>面试题目</strong></p>
 </blockquote>
 
 <a id="more"></a>
 
-<figure class="highlight java"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br><span class="line">14</span><br><span class="line">15</span><br><span class="line">16</span><br><span class="line">17</span><br><span class="line">18</span><br><span class="line">19</span><br><span class="line">20</span><br><span class="line">21</span><br><span class="line">22</span><br><span class="line">23</span><br><span class="line">24</span><br><span class="line">25</span><br><span class="line">26</span><br><span class="line">27</span><br><span class="line">28</span><br><span class="line">29</span><br><span class="line">30</span><br><span class="line">31</span><br><span class="line">32</span><br><span class="line">33</span><br><span class="line">34</span><br><span class="line">35</span><br><span class="line">36</span><br><span class="line">37</span><br><span class="line">38</span><br><span class="line">39</span><br><span class="line">40</span><br><span class="line">41</span><br><span class="line">42</span><br><span class="line">43</span><br><span class="line">44</span><br><span class="line">45</span><br><span class="line">46</span><br><span class="line">47</span><br><span class="line">48</span><br><span class="line">49</span><br><span class="line">50</span><br></pre></td><td class="code"><pre><span class="line"><span class="function"><span class="keyword">public</span> <span class="keyword">void</span> <span class="title">generate</span><span class="params">(String tableName)</span> </span>&#123;</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 全局配置</span></span><br><span class="line">		GlobalConfig config = <span class="keyword">new</span> GlobalConfig();</span><br><span class="line">		config<span class="comment">/*.setActiveRecord(true)*/</span> <span class="comment">//是否支持AR模式</span></span><br><span class="line">				.setOutputDir(System.getProperty(<span class="string">"user.dir"</span>) + <span class="string">"/src/main/java"</span>)<span class="comment">//生成路径</span></span><br><span class="line">				.setFileOverride(<span class="keyword">true</span>)<span class="comment">//设置文件覆盖</span></span><br><span class="line">				.setAuthor(<span class="string">"admin"</span>)</span><br><span class="line">				.setIdType(IdType.AUTO)<span class="comment">//主键策略</span></span><br><span class="line">				.setServiceName(<span class="string">"%sService"</span>)<span class="comment">//接口名称不带I</span></span><br><span class="line">				.setOpen(<span class="keyword">false</span>)</span><br><span class="line">				.setBaseResultMap(<span class="keyword">true</span>)</span><br><span class="line">				.setBaseColumnList(<span class="keyword">true</span>);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 配置数据源</span></span><br><span class="line">		DataSourceConfig dsc = <span class="keyword">new</span> DataSourceConfig();</span><br><span class="line">		dsc.setDriverName(<span class="string">"com.mysql.jdbc.Driver"</span>);</span><br><span class="line">		dsc.setUrl(<span class="string">"jdbc:mysql://rm-bp16885t0yn5g56gybo.mysql.rds.aliyuncs.com:3306/hotel?useUnicode=true&amp;useJDBCCompliantTimezoneShift=true&amp;useLegacyDatetimeCode=false&amp;serverTimezone=UTC"</span>);</span><br><span class="line">		dsc.setUsername(<span class="string">"root"</span>);</span><br><span class="line">		dsc.setPassword(<span class="string">"Deeptest2018"</span>);</span><br><span class="line"></span><br><span class="line">		<span class="comment">// 策略配置</span></span><br><span class="line">		StrategyConfig strategyConfig = <span class="keyword">new</span> StrategyConfig();</span><br><span class="line">		strategyConfig.setCapitalMode(<span class="keyword">true</span>)<span class="comment">//全局大写命名</span></span><br><span class="line">				.setColumnNaming(NamingStrategy.underline_to_camel)</span><br><span class="line">				.setNaming(NamingStrategy.underline_to_camel)<span class="comment">//数据库表映射到实体的命名策略</span></span><br><span class="line"><span class="comment">//                .setTablePrefix("tb_")</span></span><br><span class="line"><span class="comment">//                .setInclude("person");//生成的表</span></span><br><span class="line">				.setInclude(tableName);<span class="comment">//生成的表</span></span><br><span class="line"></span><br><span class="line">		<span class="comment">//包名映射策略</span></span><br><span class="line">		PackageConfig packageConfig = <span class="keyword">new</span> PackageConfig();</span><br><span class="line">		packageConfig.setParent(<span class="string">"com.hm.hotel_management"</span>)</span><br><span class="line">				.setMapper(<span class="string">"dao"</span>)</span><br><span class="line">				.setXml(<span class="string">"dao"</span>)</span><br><span class="line">				.setService(<span class="string">"service"</span>)</span><br><span class="line">				.setController(<span class="string">"controller"</span>)</span><br><span class="line">				.setEntity(<span class="string">"entity"</span>);</span><br><span class="line"></span><br><span class="line"></span><br><span class="line">		<span class="comment">//自动生成</span></span><br><span class="line">		AutoGenerator autoGenerator = <span class="keyword">new</span> AutoGenerator();</span><br><span class="line">		autoGenerator.setGlobalConfig(config)</span><br><span class="line">				.setDataSource(dsc)</span><br><span class="line">				.setStrategy(strategyConfig)</span><br><span class="line">				.setPackageInfo(packageConfig);</span><br><span class="line"></span><br><span class="line">		autoGenerator.execute();</span><br><span class="line"></span><br><span class="line">	&#125;</span><br></pre></td></tr></table></figure>
 
+
+<h1 id="面试相关链接"><a href="#面试相关链接" class="headerlink" title="面试相关链接"></a><strong>面试相关链接</strong></h1><p><a href="https://snailclimb.top/JavaGuide/#/?id=javahttps://snailclimb.top/JavaGuide/#/?id=java" target="_blank" rel="noopener">https://snailclimb.top/JavaGuide/#/?id=javahttps://snailclimb.top/JavaGuide/#/?id=java</a></p>
 
       
     </div>
@@ -461,8 +462,8 @@
         <div class="post-nav">
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2019/07/11/排序算法/" rel="next" title="排序算法">
-                <i class="fa fa-chevron-left"></i> 排序算法
+              <a href="/2019/10/24/整理/" rel="next" title="整理">
+                <i class="fa fa-chevron-left"></i> 整理
               </a>
             
           </div>
@@ -470,10 +471,6 @@
           <span class="post-nav-divider"></span>
 
           <div class="post-nav-prev post-nav-item">
-            
-              <a href="/2019/07/11/Docker/" rel="prev" title="Docker">
-                Docker <i class="fa fa-chevron-right"></i>
-              </a>
             
           </div>
         </div>
@@ -522,8 +519,17 @@
       
 
       
+        <ul class="sidebar-nav motion-element">
+          <li class="sidebar-nav-toc sidebar-nav-active" data-target="post-toc-wrap">
+            文章目录
+          </li>
+          <li class="sidebar-nav-overview" data-target="site-overview-wrap">
+            站点概览
+          </li>
+        </ul>
+      
 
-      <div class="site-overview-wrap sidebar-panel sidebar-panel-active">
+      <div class="site-overview-wrap sidebar-panel">
         <div class="site-overview">
           <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
             
@@ -599,6 +605,23 @@
         </div>
       </div>
 
+      
+      <!--noindex-->
+        <div class="post-toc-wrap motion-element sidebar-panel sidebar-panel-active">
+          <div class="post-toc">
+
+            
+            
+            
+            
+
+            
+              <div class="post-toc-content"><ol class="nav"><li class="nav-item nav-level-1"><a class="nav-link" href="#面试相关链接"><span class="nav-number">1.</span> <span class="nav-text">面试相关链接</span></a></li></ol></div>
+            
+
+          </div>
+        </div>
+      <!--/noindex-->
       
 
       
@@ -808,7 +831,7 @@ setInterval("createtime()",250);
   
     <script>
   window.livereOptions = {
-    refer: '2019/07/11/Mybatis代码生成器/'
+    refer: '2019/11/01/面试/'
   };
   (function(d, s) {
     var j, e = d.getElementsByTagName(s)[0];

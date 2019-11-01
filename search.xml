@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <search>
   <entry>
+    <title><![CDATA[面试]]></title>
+    <url>%2F2019%2F11%2F01%2F%E9%9D%A2%E8%AF%95%2F</url>
+    <content type="text"><![CDATA[​ 面试题目 面试相关链接https://snailclimb.top/JavaGuide/#/?id=javahttps://snailclimb.top/JavaGuide/#/?id=java]]></content>
+  </entry>
+  <entry>
     <title><![CDATA[整理]]></title>
     <url>%2F2019%2F10%2F24%2F%E6%95%B4%E7%90%86%2F</url>
     <content type="text"><![CDATA[​ 整理 es报错 https://www.cnblogs.com/zhi-leaf/p/8484337.html redis make错误 https://blog.csdn.net/Agly_Clarlie/article/details/52251746 FastDFS优化 https://www.jianshu.com/p/5879d1470c42 Ubunton下安装mysql https://blog.csdn.net/xiangwanpeng/article/details/54562362 Socket编程 https://wiki.jikexueyuan.com/project/java-socket/tcp.html Flink报错 https://www.cnblogs.com/chuijingjing/p/10683529.html Maven打包跳过测试 mvn package -U -DskipTests bin/kafka-topics.sh –delete –zookeeper 192.168.1.108:2181 –topic BOE-topic bin/kafka-topics.sh –create –zookeeper 192.168.1.108:2181 –replication-factor 1 –partitions 1 –topic BOE-topic bin/kafka-console-producer.sh –broker-list 192.168.1.108:9092 –topic BOE-topic]]></content>
